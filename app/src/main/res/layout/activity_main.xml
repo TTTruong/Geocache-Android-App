@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+
+    tools:context="project.csci.geocaching.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_textview"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_textview"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tracking_textview"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:background="@drawable/border"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/showMapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:onClick="showMap"
+            android:text="@string/show_map"
+            android:layout_above="@+id/showCacheButton"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_up"/>
+
+        <Button
+            android:id="@+id/showCacheButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_agenda"
+            android:onClick="showCacheList"
+            android:text="@string/show_cache_list"
+            android:layout_above="@+id/trackingButton"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_up"/>
+
+        <Button
+            android:id="@+id/trackingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:onClick="showTracking"
+            android:text="@string/show_tracking"
+            android:paddingLeft="20dp"
+            android:layout_above="@+id/logoutButton"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_up"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:onClick="sendLogoutMessage"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_up"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Geocaching</string>
+    <string name="login_button">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="show_map">Show Map</string>
+    <string name="title_activity_map">Map</string>
+    <string name="register_title">Register:</string>
+    <string name="register_button">Register</string>
+    <string name="logout">Logout</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="password_confirmation">Repeat Password</string>
+    <string name="back">Back</string>
+    <string name="password_dont_match">Passwords Don\'t Match</string>
+    <string name="welcome_message1">Hello %1$s!</string>
+    <string name="welcome_message2">Welcome to Geocaching</string>
+    <string name="show_cache_list">Caches</string>
+    <string name="show_caches">Show Caches</string>
+    <string name="track_caches">Track Selected Cache</string>
+    <string name="tracking_information">You\'re Tracking Cache: \n\n Title: %1$s \n
+        Latitude: %2$.4f \n Longitude: %3$.4f</string>
+    <string name="distance_information">%1$.4f km</string>
+    <string name="claimed_cache">\n\nYou have successfully claimed a cache!\n\n</string>
+    <string name="no_active_cache">\n\nNo Active Tracking Cache\n\n</string>
+    <string name="distance_title">Distance to Cache:</string>
+    <string name="device_bearing">Device Bearing:</string>
+    <string name="to_cache">Bearing to Cache:</string>
+    <string name="debug">Debug</string>
+    <string name="show_tracking">Tracking</string>
+    <string name="duplicate_user">Username Already Taken </string>
+    <string name="claim">Claim</string>
+    <string name="bearing_information">Bearing to Cache:%1$f</string>
+    <string name="title">GeoCaching</string>
+    <string name="login_fail">Login Unsuccessful</string>
+    <string name="no_distance">0 km</string>
+    <string name="no_empty_text">Fields Cannot Be Empty</string>
+</resources>
